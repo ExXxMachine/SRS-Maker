@@ -1,0 +1,140 @@
+body {
+	position: absolute;
+	z-index: 2;
+}
+.content {
+	font-family: 'Gilroy-Light';
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.login__block {
+	width: 500px;
+	height: 550px;
+	background-color: #9b51e0af;
+	border: 2px solid #9b51e0;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	z-index: 2;
+}
+form {
+	display: flex;
+	margin-top: 5%;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 90%;
+}
+
+input {
+	width: 80%;
+	border: 0 0 1px 0;
+}
+
+.login__h1 {
+	font-family: 'Gilroy-Bold';
+	font-size: 55px;
+	color: aliceblue;
+}
+.form__group {
+	position: relative;
+	padding: 15px 0 0;
+	margin-top: 10px;
+	width: 70%;
+}
+
+.form__field {
+	font-family: inherit;
+	width: 100%;
+	border: 0;
+	border-bottom: 2px solid rgb(255, 255, 255);
+	outline: 0;
+	font-size: 1.3rem;
+	color: #fff;
+	padding: 7px 0;
+	background: transparent;
+	transition: border-color 0.2s;
+
+	&::placeholder {
+		color: transparent;
+	}
+
+	&:placeholder-shown ~ .form__label {
+		font-size: 30px;
+		cursor: text;
+		top: 20px;
+	}
+}
+.form__label {
+	position: absolute;
+	top: 0;
+	display: block;
+	transition: 0.2s;
+	font-size: 1rem;
+	color: rgb(255, 255, 255);
+}
+
+.form__field:focus {
+	~ .form__label {
+		position: absolute;
+		top: 0;
+		display: block;
+		transition: 0.2s;
+		font-size: 1rem;
+		color: #fff;
+		font-weight: 300;
+	}
+	padding-bottom: 6px;
+	font-weight: 300;
+	border-width: 3px;
+	border-image: #fff;
+	border-image-slice: 1;
+}
+/* reset input */
+.form__field {
+	&:required,
+	&:invalid {
+		box-shadow: none;
+	}
+}
+
+.login__ico {
+	position: absolute;
+	width: 10%;
+	height: auto;
+	right: 0;
+	filter: invert(100%);
+}
+.login__btn {
+	width: 71%;
+	height: 12%;
+	font-family: 'Gilroy-Bold';
+	font-size: 30px;
+	border-radius: 15px;
+	margin-top: 15%;
+	background-color: #fff;
+	border: none;
+}
+
+a.login__reg-link {
+	color: #fff;
+	margin-top: 5%;
+	text-decoration: underline;
+	font-size: 20px;
+}
+
+@media (max-width: 900px) {
+	.login__block {
+		width: 100vw;
+		height: 100vh;
+		background-color: #9b51e0;
+		border-radius: 0;
+	}
+	input {
+		height: 7vh;
+	}
+}

@@ -1,0 +1,27 @@
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 10vh;
+	padding: 0 10% 0 10%;
+	color: #ffffff;
+	font-size: calc(20px + (25 - 20) * (100vw - 768px) / (1440 - 768));
+	background-color: #9b51e0;
+}
+.footer__github-ico {
+	width: auto;
+	height: 70%;
+	filter: invert(100%);
+}
+.footer__github-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+@media screen and (max-width: 915px) {
+	footer {
+		height: 10vh;
+	}
+}

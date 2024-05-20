@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SRS Maker</title>
+		<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="/src/style/rest.css" />
+		<link rel="stylesheet" href="/src/style/style.css" />
+		<link rel="stylesheet" href="/src/style/selectProject.css" />
+		<link href="/src/style/fonts/GilroyFont.css" rel="stylesheet" />
+		<link href="https://fonts.cdnfonts.com/css/gilroy" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('.header-component').load('../components/Header/Header.html')
+			})
+			$(document).ready(function () {
+				$('.footer-component').load('../components/Footer/Footer.html')
+			})
+		</script>
+	</head>
+	<body>
+		<div class="header-component"></div>
+		<div class="content">
+			<button class="project__create-btn">Новый проект</button>
+			<div class="project__block project__block__border-none">
+				<p>Имя проекта</p>
+				<p>Дата создания</p>
+			</div>
+			<a href="/src/pages/Project.html">
+				<div class="project__block">
+					<p>project1</p>
+					<p class="project__data__none">10-12-2024</p>
+				</div></a
+			>
+		</div>
+		<div class="footer-component"></div>
+	</body>
+</html>

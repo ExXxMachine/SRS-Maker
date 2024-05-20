@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SRS Maker</title>
+
+		<link rel="icon" href="../src/images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="/src/style/rest.css" />
+		<link rel="stylesheet" href="/src/style/style.css" />
+		<link rel="stylesheet" href="/src/style/mainPage.css" />
+		<link href="/src/style/fonts/GilroyFont.css" rel="stylesheet" />
+		<link href="https://fonts.cdnfonts.com/css/gilroy" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('.header-component').load('../src/components/Header/Header.html')
+			})
+			$(document).ready(function () {
+				$('.footer-component').load('../src/components/Footer/Footer.html')
+			})
+		</script>
+	</head>
+	<body>
+		<div id="root">
+			<div class="header-component"></div>
+			<div class="container">
+				<h2 class="main-page__h2">Что такое SRS?</h2>
+				<p class="main-page__part">
+					<span>
+						SRS (software requirements specification, спецификация требований к
+						программному обеспечению) — документ с требованиями к приложению,
+						по-нашему — техническое задание. В эсэрэску входят требования и
+						ограничения по функциональности и производительности SRS составляют
+						для прозрачного взаимодействия заказчика и подрядчика.
+					</span>
+				</p>
+				<p class="main-page__part">
+					<span>
+						SRS обычно пишут простым «клиентским» языком, потому что и
+						составляется он на основе мнения клиента. Чтобы начать
+						сотрудничество, подрядчику необходимо узнать, чего хочет заказчик,
+						понять желания и бизнес-цели. На основе информации с нескольких
+						созвонов на стороне подрядчика составляют SRS документ.
+					</span>
+				</p>
+				<h2 class="main-page__h2">Структура</h2>
+				<p class="main-page__part">
+					<span>
+						Выглядит пугающе. С одной стороны, удобно, когда любой проект можно
+						поместить в понятный шаблон, с другой — есть риск попасть в жесткие
+						рамки, внутри которых пропадет индивидуальность продукта.
+					</span>
+				</p>
+				<p class="main-page__part">
+					<span>
+						Структура SRS документа включает в себя детальное описание каждой
+						части будущего приложения. Проблема в том, что 90% информации в
+						таком документе — вода; настоящую пользу несут разве что картинки —
+						примеры дизайна и описания работы сложных алгоритмов. Допустим, если
+						бы у Tinder был SRS, то там бы был алгоритм мэтчинга. И еще 37
+						страниц ненужной инфы.
+					</span>
+				</p>
+				<p class="main-page__part">
+					<span>
+						Структура спецификации требований к программному обеспечению
+						выглядит так:
+					</span>
+				</p>
+				<ul class="main-page__list">
+					<li>Введение</li>
+					<ul class="main-page__list">
+						<li>Цели</li>
+						<li>Соглашения о терминах</li>
+						<li>Предполагаемая аудитория и последовательность восприятия</li>
+						<li>Масштаб проекта</li>
+						<li>Ссылки на источники</li>
+					</ul>
+					<li>Общее описание</li>
+					<ul class="main-page__list">
+						<li class="main-page__none-style">Видение продукта</li>
+						<li class="main-page__none-style">Функциональность продукта</li>
+						<li class="main-page__none-style">
+							Классы и характеристики пользователей
+						</li>
+						<li class="main-page__none-style">
+							Среда функционирования продукта (операционная среда)
+						</li>
+						<li class="main-page__none-style">
+							Рамки, ограничения, правила и стандарты
+						</li>
+						<li class="main-page__none-style">
+							Документация для пользователей
+						</li>
+						<li class="main-page__none-style">Допущения и зависимости</li>
+					</ul>
+				</ul>
+				<ul class="main-page__list">
+					<li>Функциональность системы</li>
+					<ul class="main-page__list">
+						<li class="main-page__none-style">
+							Функциональный блок X (таких блоков может быть несколько)
+						</li>
+						<li>Описание и приоритет</li>
+						<li>
+							Причинно-следственные связи, алгоритмы (движение процессов,
+							workflows)
+						</li>
+						<li>Функциональные требования</li>
+					</ul>
+				</ul>
+				<ul class="main-page__list">
+					<li>Требования к внешним интерфейсам</li>
+					<ul class="main-page__list">
+						<li class="main-page__none-style">Интерфейсы пользователя (UX)</li>
+						<li class="main-page__none-style">Программные интерфейсы</li>
+						<li class="main-page__none-style">Интерфейсы оборудования</li>
+						<li class="main-page__none-style">
+							Интерфейсы связи и коммуникации
+						</li>
+					</ul>
+				</ul>
+				<ul class="main-page__list">
+					<li>Нефункциональные требования</li>
+					<ul class="main-page__list">
+						<li class="main-page__none-style">
+							Требования к производительности
+						</li>
+						<li class="main-page__none-style">
+							Требования к сохранности (данных)
+						</li>
+						<li class="main-page__none-style">
+							Критерии качества программного обеспечения
+						</li>
+						<li class="main-page__none-style">
+							Требования к безопасности системы
+						</li>
+					</ul>
+				</ul>
+				<ul class="main-page__list">
+					<li>Прочие требования</li>
+					<ul class="main-page__list">
+						<li class="main-page__none-style">Приложение А: Глоссарий</li>
+						<li class="main-page__none-style">
+							Приложение Б: Модели процессов предметной области и другие
+							диаграммы
+						</li>
+						<li class="main-page__none-style">
+							Приложение В: Список ключевых задач
+						</li>
+					</ul>
+				</ul>
+				<h2 class="main-page__h2">Релевантность</h2>
+				<p class="main-page__part">
+					<span>
+						Как бы ни хотелось рассказать в SRS документе о преимуществах
+						компании или идеях, которые пришли в голову уже в процессе
+						разработки, делать это запрещено. У документа — четкая цель, а
+						значит, такое же четкое содержание. SRS всегда отражает
+						функциональность и технические характеристики продукта.
+					</span>
+				</p>
+				<h2 class="main-page__h2">Прозрачность</h2>
+				<p class="main-page__part">
+					<span>
+						Здесь речь о терминах и языке. Используйте язык клиента, но не
+						переборщите с упрощением, эвфемизмами и литературными приемами. Не
+						стоит писать о волшебном труде мастеров кода и гениальных выдумках
+						повелителей картинок. Лучше быть излишне конкретным, чем
+						двусмысленным. Спецификация требований к программному обеспечению —
+						не шедевр мировой классики, поэтому даже самые элементарные
+						стилистические правила можно игнорировать во имя ясности.
+					</span>
+				</p>
+				<h2 class="main-page__h2">Точность</h2>
+				<p class="main-page__part">
+					<span>
+						Сокращения, аббревиатуры, названия — в документе они должны не
+						должны отличаться. На первый взгляд — мелочь, но поскольку документ
+						носит официальный характер, ошибаться в подобных моментах не стоит.
+					</span>
+				</p>
+				<h2 class="main-page__h2">Рейтинг по важности</h2>
+				<p class="main-page__part">
+					<span>
+						Никаких «два пишу, четыре в уме»! Если на исполнение того или иного
+						требования уйдет много времени, стоит поставить для него высокий
+						приоритет. В целом ранжирование требований по важности и
+						стабильности — хорошая идея. Под стабильностью мы понимаем,
+						насколько точно поставили задачу, и придется ли что-то менять в
+						процессе исполнения.
+					</span>
+				</p>
+			</div>
+			<div class="footer-component"></div>
+		</div>
+	</body>
+</html>

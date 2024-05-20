@@ -1,0 +1,37 @@
+.container {
+	padding: 10vh 10% 20vh 5%;
+	position: relative;
+	width: 100%;
+}
+.main-page__part {
+	font-family: 'Gilroy-Light';
+	margin: 2%;
+	font-size: 20px;
+}
+.main-page__h2 {
+	font-family: 'Gilroy-Bold';
+	margin: 5% 0 0 2%;
+	font-weight: 900;
+	font-size: 30px;
+}
+
+ul.main-page__list {
+	font-family: 'Gilroy-Light';
+	margin: 2%;
+	font-size: calc(20px + (20 - 15) * (100vw - 768px) / (1440 - 768));
+}
+li {
+	margin: 1%;
+}
+li.main-page__none-style {
+	list-style-type: none;
+}
+
+@media screen and (max-width: 915px) {
+	.main-page__h2 {
+		margin: 10% 0 10% 0;
+	}
+	ul.main-page__list {
+		margin: 10% 0 10% 0;
+	}
+}
