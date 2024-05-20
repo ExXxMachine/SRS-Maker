@@ -205,6 +205,13 @@ nav.header__nav {
 	width: 100%;
 	padding: 0% 5% 0% 5%;
 }
+.spliter {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+}
 header::before {
 	content: '';
 	position: absolute;
@@ -233,13 +240,13 @@ header::before {
 }
 .header__list li {
 	list-style: none;
-	padding: 0 0 0 20px;
 }
 .header__link {
 	font-size: 20px;
 	text-decoration: none;
 	font-family: 'Gilroy-Bold';
 	font-size: 30px;
+	margin: 0 10px 0 10px;
 	color: #fff;
 }
 .header__logo {
@@ -319,9 +326,12 @@ header::before {
 		padding: 5% 0 0 0;
 	}
 	.header__list li {
-		margin: 0 0 20px 0;
+		margin: 0 0 10px 0;
 	}
 	body.lock {
 		overflow: hidden;
+	}
+	.spliter {
+		display: none;
 	}
 }
