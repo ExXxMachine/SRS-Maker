@@ -8,16 +8,17 @@
 		<link href="/src/style/fonts/GilroyFont.css" rel="stylesheet" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Singin</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="content">
 			<div class="login__block">
 				<h1 class="login__h1">Sing in</h1>
-				<form action="login.html">
+				<form action="login.html" id="form">
 					<div class="form__group field">
 						<input
 							type="input"
-							class="form__field"
+							class="form__field login"
 							placeholder="Login"
 							name="login"
 							id="login"
@@ -29,20 +30,21 @@
 					<div class="form__group field">
 						<input
 							type="password"
-							class="form__field"
+							class="form__field password"
 							placeholder="Password"
-							name="login"
-							id="login"
+							name="password"
+							id="password"
 							required
 						/>
 						<label for="password" class="form__label">Password</label>
 						<img src="/src/images/password_ico.png" alt="password_ico" class="login__ico"/>
 					</div>
-					<button class="login__btn">Sing in</button>
-					<a href="/src/pages/login.html" class="login__reg-link">I already have an account</a>
+					<button  class="login__btn " type="submit" id="submit" >Sing in</button>
+					<a href="/src/pages/login.html" title="login" class="login__reg-link">I already have an account</a>
 					</div>
 				</form>
 			</div>
 		</div>
 	</body>
+	<script src="/src/scripts/registration.js"></script>
 </html>

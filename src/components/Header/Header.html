@@ -13,24 +13,34 @@
 			<div class="contaner">
 				<div class="header__body">
 					<a href="/public/index.html" class="header__logo">
-						<img src="/src/images/logo-desk.png" />
+						<img src="/src/images/logo-desk.png" alt="logo"/>
 					</a>
 					<div class="header__burger">
 						<span></span>
 					</div>
 					<nav class="header__menu">
 						<ul class="header__list">
-							<li>
-								<a href="../src/pages/login.html" class="header__link">LogIn</a>
+							<li class="header__li">
+								<a
+									href="../src/pages/login.html"
+									title="login"
+									class="header__link"
+									>LogIn</a
+								>
+							</li>
+							<li class="disabled__link" id="logout" onclick="logout()">
+								<a href="/public/index.html" title="logout" class="header__link"
+									>LogOut</a
+								>
 							</li>
 							<div class="spliter">|</div>
-							<li>
-								<a href="../src/pages/Singin.html" class="header__link"
+							<li class="header__li">
+								<a href="../src/pages/Singin.html" title="singin" class="header__link"
 									>SingIn</a
 								>
 							</li>
-							<li>
-								<a href="/src/pages/SelectProject.html" class="header__link"
+							<li class="disabled__link">
+								<a href="/src/pages/SelectProject.html" title="project" class="header__link"
 									>Project</a
 								>
 							</li>
