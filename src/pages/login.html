@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="/src/images/favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="/src/style/rest.css" />
 		<link rel="stylesheet" href="/src/style/login.css" />
 		<link href="/src/style/fonts/GilroyFont.css" rel="stylesheet" />
@@ -16,31 +16,39 @@
 				<form action="login.html" id="form">
 					<div class="form__group field">
 						<input
-							type="input"
 							class="form__field login"
-							placeholder="Login"
+							placeholder="login"
 							name="login"
 							id="login"
 							required
 						/>
 						<label for="login" class="form__label">login</label>
-						<img src="/src/images/login_ico.png" alt="login_ico" class="login__ico"/>
+						<img
+							src="/src/images/login_ico.png"
+							alt="login_ico"
+							class="login__ico"
+						/>
 					</div>
 					<div class="form__group field">
 						<input
 							type="password"
 							class="form__field password"
-							placeholder="Password"
+							placeholder="password"
 							name="password"
 							id="password"
 							required
 						/>
-						<label for="password" class="form__label">Password</label>
-						<img src="/src/images/password_ico.png" alt="password_ico" class="login__ico"/>
+						<label for="password" class="form__label">password</label>
+						<img
+							src="/src/images/password_ico.png"
+							alt="password_ico"
+							class="login__ico"
+						/>
 					</div>
-					<button class="login__btn " type="submit" id="submit" >Log in</button>
-					<a href="/src/pages/Singin.html" title="singin" class="login__reg-link">Don`t have a account Register</a>
-					</div>
+					<button class="login__btn" type="submit" id="submit">Log in</button>
+					<a href="/Singin.html" title="singin" class="login__reg-link"
+						>Don`t have a account Register</a
+					>
 				</form>
 			</div>
 		</div>

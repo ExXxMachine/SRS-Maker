@@ -18,7 +18,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
 		.then(res => {
 			if (res.token) {
 				localStorage.setItem('flag', 1)
-				window.location.href = '/public/index.html'
+				window.location.href = '/'
 			} else {
 				alert('Registration failed: ' + res.message)
 			}

@@ -17,7 +17,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
 		.then(res => res.json())
 		.then(res => {
 			if (res.success) {
-				window.location.href = '/src/pages/login.html'
+				window.location.href = '/login.html'
 			} else {
 				alert('Registration failed: ' + res.message)
 			}

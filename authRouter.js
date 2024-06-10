@@ -5,6 +5,9 @@ const { check } = require('express-validator')
 const authMiddleware = require('./middlewaree/authMiddleware')
 const roleMiddleware = require('./middlewaree/roleMiddleware')
 
+router.get('/kek', function (req, res) {
+	res.sendfile('public/index.html')
+})
 router.post(
 	'/registration',
 	[
@@ -18,6 +21,5 @@ router.post(
 )
 router.post('/login', controller.login)
 router.get('/users', roleMiddleware(['USER']), controller.getUsers)
-
 
 module.exports = router
